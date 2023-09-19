@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'custom_icon.dart';
 
-class CustomAppBa extends StatelessWidget {
-  const CustomAppBa({Key? key}) : super(key: key);
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
