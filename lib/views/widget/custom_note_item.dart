@@ -24,7 +24,7 @@ class NoteItem extends StatelessWidget {
                   fontSize: 24,
                 ),),
               ),
-              subtitle: Text('Build your career  with mohamed khaled ', style:
+              subtitle: Text('Build your career with Mohamed Khaled', style:
               TextStyle(
                 color:Colors.black87.withOpacity(.3),
                 fontSize: 16,
