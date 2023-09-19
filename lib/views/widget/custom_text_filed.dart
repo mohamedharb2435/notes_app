@@ -2,14 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:notes/constants.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({Key? key}) : super(key: key);
+  const CustomTextField({Key? key, required this.hint, this.maxLines=1}) : super(key: key);
 
+final String hint ;
+final int  maxLines;
   @override
   Widget build(BuildContext context) {
     return TextField(
       cursorColor: kPrimaryColor,
+      maxLines: maxLines,
       decoration: InputDecoration(
-        hintText: 'Title',
+        hintText: hint,
         hintStyle:const  TextStyle(
           color: kPrimaryColor,
         ),
@@ -23,7 +26,7 @@ class CustomTextField extends StatelessWidget {
   OutlineInputBorder BuildBorder([Color]) {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
-        borderSide: BorderSide(
+        borderSide:const  BorderSide(
           color: Colors.white,
         )
       );
