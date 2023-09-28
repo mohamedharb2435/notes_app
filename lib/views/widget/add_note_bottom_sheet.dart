@@ -9,12 +9,12 @@ import 'package:notes/views/widget/custom_bottom.dart';
 import 'package:notes/views/widget/custom_text_filed.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
-   AddNoteBottomSheet({Key? key}) : super(key: key);
+  const  AddNoteBottomSheet({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 16),
+      padding: const   EdgeInsets.symmetric(horizontal: 16),
       child: SingleChildScrollView(
         child: BlocConsumer<AddNotesCubit,AddNotesState>(
           listener: (context,state){
