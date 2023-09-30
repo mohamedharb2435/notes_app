@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -17,7 +16,7 @@ final IconData iconData ;
           fontSize: 26,
            fontWeight:FontWeight.w400
        ),),
-       Spacer(),
+       const Spacer(),
        CustomIconSearch(
          iconData:iconData ,
        ),
