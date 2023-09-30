@@ -32,13 +32,16 @@ final NoteModel noteModel ;
                     fontSize: 24,
                   ),),
                 ),
-                subtitle: Text(noteModel.subTitle, style:
-                TextStyle(
+                subtitle: Text(
+                  noteModel.subTitle,
+                  style: TextStyle(
                   color:Colors.black87.withOpacity(.3),
                   fontSize: 16,
                 ),),
                 trailing: IconButton(
-                  onPressed: (){},
+                  onPressed: (){
+                    noteModel.delete();
+                  },
                   icon:const Icon(
                     FontAwesomeIcons.trash,
                     size: 25,
