@@ -1,8 +1,7 @@
-part of 'add_notes_cubit.dart';
-
 import 'package:flutter/cupertino.dart';
 import 'package:notes/models/note_model.dart';
 
+part of 'notes_cubit.dart';
 @immutable
 abstract class NotesState {}
 

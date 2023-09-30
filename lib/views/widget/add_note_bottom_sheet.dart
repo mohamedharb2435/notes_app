@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:notes/constants.dart';
-import 'package:notes/cubits/add_notes_cubit.dart';
+import 'package:notes/cubits/add_notes_cubit/add_notes_cubit.dart';
 import 'package:notes/views/widget/add_note_bottom_sheet.dart';
 import 'package:notes/views/widget/add_note_form.dart';
 import 'package:notes/views/widget/custom_bottom.dart';
