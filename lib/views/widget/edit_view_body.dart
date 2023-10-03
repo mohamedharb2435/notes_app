@@ -1,26 +1,50 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:notes/cubits/notes_cubit/notes_cubit.dart';
+import 'package:notes/models/note_model.dart';
 import 'package:notes/views/widget/custom_app_bar.dart';
 import 'package:notes/views/widget/custom_text_filed.dart';
 
-class EditNoteViewBody extends StatelessWidget {
-  const EditNoteViewBody({Key? key}) : super(key: key);
+class EditNoteViewBody extends StatefulWidget {
+  const EditNoteViewBody({Key? key, required this.noteModel}) : super(key: key);
+final NoteModel noteModel ;
 
   @override
+  State<EditNoteViewBody> createState() => _EditNoteViewBodyState();
+}
+
+class _EditNoteViewBodyState extends State<EditNoteViewBody> {
+   String? title , content ;
+  @override
   Widget build(BuildContext context) {
-    return   const Padding(
-      padding:  EdgeInsets.symmetric(horizontal: 24),
+    return    Padding(
+      padding:const  EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
-          SizedBox(height: 40,),
+          const SizedBox(height: 40,),
           CustomAppBar(
+            onPressed: () {
+             widget.noteModel.title =title ?? widget.noteModel.title ;
+             widget.noteModel.subTitle =content ?? widget.noteModel.subTitle ;
+             widget.noteModel.save();
+             BlocProvider.of<NotesCubit>(context).fetchAllNotes() ;
+             Navigator.pop(context);
+            },
             iconData: Icons.check,
             title: 'Edit Note',
           ),
-          SizedBox(height: 40,),
-          CustomTextField(hint: 'Title'),
-          SizedBox(height: 16,),
-          CustomTextField(
-            hint: 'content',
+          const SizedBox(height: 40,),
+           CustomTextField(
+              onChange: (value){
+                title =value ;
+              },
+              hint: widget.noteModel.title),
+          const SizedBox(height: 16,),
+           CustomTextField(
+            onChange:(value){
+              content=value ;
+            },
+            hint:  widget.noteModel.subTitle ,
           maxLines: 6,
           ),
         ],
