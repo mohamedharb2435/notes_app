@@ -13,14 +13,14 @@ class ColorItem extends StatelessWidget {
     return isActive ?
     CircleAvatar(
      radius: 32,
-     backgroundColor: Colors.white,
+     backgroundColor: Colors.lightGreen,
      child:  CircleAvatar(
         radius: 28,
         backgroundColor:colors,
       ),
    )
     : CircleAvatar(
-      radius: 32,
+      radius: 24,
       backgroundColor: colors,
     );
   }

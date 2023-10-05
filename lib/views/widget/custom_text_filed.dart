@@ -38,7 +38,7 @@ final void Function(String)? onChange ;
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
         borderSide:const  BorderSide(
-          color: Colors.white,
+          color: kPrimaryColor,
         )
       );
   }

@@ -15,20 +15,25 @@ void main() async{
   runApp(const NotesApp());
 }
 class NotesApp extends StatelessWidget {
+  static final ValueNotifier<ThemeMode> themeNotifier =
+  ValueNotifier(ThemeMode.light);
   const NotesApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
+    return  ValueListenableBuilder<ThemeMode>(
+        valueListenable: themeNotifier,
+        builder: (_, ThemeMode currentMode, __) {
+     return BlocProvider(
       create: (context) => NotesCubit(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          brightness:Brightness.dark,
-        ),
+        theme:ThemeData(primarySwatch: Colors.amber),
+          darkTheme: ThemeData.dark(),
+          themeMode: currentMode,
         home: const NotesView(),
-      ),
-    );
-  }
+      )
+      );
+        });
 }
-
+}
