@@ -1,11 +1,7 @@
-import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:notes/constants.dart';
 import 'package:notes/cubits/notes_cubit/notes_cubit.dart';
 import 'package:notes/models/note_model.dart';
-import 'package:notes/views/widget/colors_list_view.dart';
 import 'package:notes/views/widget/custom_app_bar.dart';
 import 'package:notes/views/widget/custom_text_filed.dart';
 import 'package:notes/views/widget/edit_note_coolors_list_view.dart';

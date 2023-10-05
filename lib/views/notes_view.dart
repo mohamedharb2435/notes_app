@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:notes/constants.dart';
-import 'package:notes/main.dart';
-import 'package:notes/views/widget/add_note_bottom_sheet.dart';
 import 'package:notes/views/widget/floating_action_menu.dart';
 import 'package:notes/views/widget/note_view_body.dart';
 
@@ -14,7 +10,7 @@ class NotesView extends StatelessWidget {
     return const Scaffold(
       floatingActionButton:Padding(
         padding:  EdgeInsets.all(24),
-        child: floating_action_menu(),
+        child:FloatingActionMenu(),
       ),
       body:  NoteViewBody(),
     );

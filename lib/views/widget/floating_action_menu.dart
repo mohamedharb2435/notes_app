@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:notes/constants.dart';
 import 'package:notes/main.dart';
 import 'package:notes/views/widget/add_note_bottom_sheet.dart';
 
-class floating_action_menu extends StatelessWidget {
-  const floating_action_menu({
+class FloatingActionMenu extends StatelessWidget {
+  const FloatingActionMenu({
     super.key,
   });
 
