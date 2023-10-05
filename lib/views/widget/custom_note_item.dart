@@ -1,6 +1,8 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:notes/cubits/notes_cubit/notes_cubit.dart';
 import 'package:notes/models/note_model.dart';
@@ -44,9 +46,29 @@ final NoteModel noteModel ;
                 ),),
                 trailing: IconButton(
                   onPressed: (){
-                    noteModel.delete();
+                    AwesomeDialog(
+                      context: (context),
+                      dialogType: DialogType.question,
+                      animType: AnimType.topSlide,
+                      showCloseIcon: true,
+                      title: "Delete Note",
+                      desc: "Are you Sure you want to delete this Note?",
+                      btnCancelOnPress:(){},
+                      btnOkOnPress: (){
+                        noteModel.delete();
+                        BlocProvider.of<NotesCubit>(context).fetchAllNotes();
+                        Fluttertoast.showToast(
+                          msg: "The Note has Been Deleted",
+                          toastLength: Toast.LENGTH_SHORT,
+                          gravity: ToastGravity.BOTTOM,
+                          timeInSecForIosWeb: 2,
+                          backgroundColor:Colors.red,
+                          textColor: Colors.white,
+                        );
+                      },
 
-                    BlocProvider.of<NotesCubit>(context).fetchAllNotes();
+                    ).show();
+
                   },
                   icon:const Icon(
                     FontAwesomeIcons.trash,
