@@ -33,7 +33,7 @@ class NotesApp extends StatelessWidget {
           darkTheme: ThemeData.dark(),
           themeMode: currentMode,
         title: "Notes",
-        home:const NotesView(),
+        home: SplashScreen(),
 
       )
       );
