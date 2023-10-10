@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 6), () async {
+    Future.delayed(const Duration(seconds: 6), () async {
       Navigator.pushReplacement(context, MaterialPageRoute(
           builder:(context){
             return const  NotesView();
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ],
               repeatForever: true,
               onTap: () {
-                print("Tap Event");
+                // print("Tap Event");
               },
             ),
 

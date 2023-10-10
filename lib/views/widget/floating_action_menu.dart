@@ -27,13 +27,14 @@ class FloatingActionMenu extends StatelessWidget {
           onTap: (){
             showModalBottomSheet(
                 isScrollControlled: true,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                ),
+
                 context: context,
                 builder: (context){
-                  return  const AddNoteBottomSheet();
-                }
+                  return const   AddNoteBottomSheet();
+                },
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(16),
+              ),
             );
           },
         ),

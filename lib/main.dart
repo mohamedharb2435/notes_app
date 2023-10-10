@@ -9,8 +9,8 @@ import 'package:notes/views/notes_view.dart';
 import 'package:notes/views/widget/splash_screen.dart';
 
 void main() async{
-  await Hive.initFlutter();
   Bloc.observer=SimpleBlocObserver();
+  await Hive.initFlutter();
   Hive.registerAdapter( NoteModelAdapter());
   await Hive.openBox<NoteModel>(kNotesBox);
   runApp(const NotesApp());
@@ -32,10 +32,12 @@ class NotesApp extends StatelessWidget {
         theme:ThemeData(primarySwatch: Colors.amber),
           darkTheme: ThemeData.dark(),
           themeMode: currentMode,
-        home:const SplashScreen(),
+        title: "Notes",
+        home:const NotesView(),
 
       )
       );
-        });
+        }
+        );
 }
 }
