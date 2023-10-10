@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
     PageViewModel(
         image: 'assets/images/search_notes.png',
         subtitle:
-        'Find Your Thoughts in a Flash: Searching Notes and Unleashing Creativity',
+        'Find Your Thoughts in a Flash:Searching Notes and Unleashing Creativity',
         text: 'Search Notes'),
   ];
   int ck = 0;

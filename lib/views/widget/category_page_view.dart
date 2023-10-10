@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:notes/models/pageview_model.dart';
 
+
 class CategoryPageView extends StatelessWidget {
   const CategoryPageView({super.key, required this.pageViewModel});
   final PageViewModel pageViewModel ;
@@ -15,7 +16,7 @@ class CategoryPageView extends StatelessWidget {
             child: Text(
               pageViewModel.text,
               style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                 fontFamily:'pacifico',
               ),
@@ -28,7 +29,7 @@ class CategoryPageView extends StatelessWidget {
                 pageViewModel.subtitle,
                 style: TextStyle(
                   color:Color(0x7B000000),
-                  fontSize: 18,
+                  fontSize: 16,
                 ),
               ),
             ),
