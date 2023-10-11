@@ -14,7 +14,6 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 
 #### video
 [<img src="screen_shots/home.jpg" width="260" height="420"/> ](https://youtu.be/_i7V-ZexdDg)  
-
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
