@@ -13,7 +13,7 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 - Local Database: Hive.
 
 #### video
-[<img src="demo/VID_20231011021427.mp4" width="260" height="420"/> ]([https://youtu.be/_i7V-ZexdDg](https://github.com/mohamedharb2435/notes_app/blob/main/demo/VID_20231011021427.mp4))  
+[<video controls src="demo/VID_20231011021427.mp4" width="260" height="420"/> ]
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
