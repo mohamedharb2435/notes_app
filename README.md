@@ -12,6 +12,8 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 - State management: Bloc(Cubit).
 - Local Database: Hive.
 
+#### video
+[<img src="screen_shots/home.jpg" width="260" height="420"/> ](https://youtu.be/_i7V-ZexdDg)  
 
 This project is a starting point for a Flutter application.
 
