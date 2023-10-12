@@ -21,7 +21,8 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 -  Flutter Speed Dial.
 -  Animated Text Kit.
 -  Smooth Page Indicator.
--  Flutter Launcher Icons 
+-  Flutter Launcher Icons
+![Simple Clean Minimalist Ancient Egypt History Class Presentation](https://github.com/mohamedharb2435/notes_app/assets/90930974/406b665b-35c3-49c8-a5c1-8aea0432df9a)
 
 
 This project is a starting point for a Flutter application.
