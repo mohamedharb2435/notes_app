@@ -25,6 +25,7 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 ## Screen Shoot 
 
 ![welcome](https://github.com/mohamedharb2435/notes_app/assets/90930974/c40f9464-e519-449a-955c-5ec9058a559c)
+----
 ![Add](https://github.com/mohamedharb2435/notes_app/assets/90930974/81e05c7a-1a41-499c-917e-bdee6ab45454)
 ![edit](https://github.com/mohamedharb2435/notes_app/assets/90930974/78fb91a0-7d56-48ab-9fa6-614259eb0bc5)
 ![search](https://github.com/mohamedharb2435/notes_app/assets/90930974/9a734c9d-16c1-4877-8597-da3bf55d82b2)
