@@ -11,6 +11,17 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 - Dart
 - State management: Bloc(Cubit).
 - Local Database: Hive.
+## used Packages
+- Cupertino Icons.
+-  Font Awesome Flutter.
+-  Hive.
+-  Hive Flutter.
+-  Modal Progress Hud Nsn.
+-  Flutter Toast.
+-  Flutter Speed Dial.
+-  Animated Text Kit.
+-  Smooth Page Indicator.
+-  Flutter Launcher Icons 
 
 
 This project is a starting point for a Flutter application.
