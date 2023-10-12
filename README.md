@@ -23,7 +23,7 @@ The "Notes" Flutter application is a versatile note-taking app designed to help 
 -  Smooth Page Indicator.
 -  Flutter Launcher Icons
 ## Screen Shoot 
-<img src="![welcome](https://github.com/mohamedharb2435/notes_app/assets/90930974/c40f9464-e519-449a-955c-5ec9058a559c)" width="240" height="640"/>
+<img src="(https://github.com/mohamedharb2435/notes_app/assets/90930974/c40f9464-e519-449a-955c-5ec9058a559c)" width="240" height="640"/>
 
 ![welcome](https://github.com/mohamedharb2435/notes_app/assets/90930974/c40f9464-e519-449a-955c-5ec9058a559c)
 ----
