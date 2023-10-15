@@ -2,9 +2,9 @@
 
 The "Notes" Flutter application is a versatile note-taking app designed to help users conveniently and organize their, ideas, to-do lists, and important information. With a sleek and user-friendly interface, the app offers the following features :
 
--Add and Edit Notes with Selecting  Colors.
--Search and Delete Notes.
--convert to dark Mode.
+- Add and Edit Notes with Selecting  Colors.
+- Search and Delete Notes.
+- convert to dark Mode.
 
 ## using
 - Flutter
